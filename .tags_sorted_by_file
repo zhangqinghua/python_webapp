@@ -1,0 +1,31 @@
+asyncio	www\app.py	/^import asyncio$/;"	i
+index	www\app.py	/^def index(request):$/;"	f
+init	www\app.py	/^def init(loop):$/;"	f
+logging	www\app.py	/^import logging$/;"	i
+loop	www\app.py	/^loop = asyncio.get_event_loop()$/;"	v
+web	www\app.py	/^from aiohttp import web$/;"	i
+Field	www\orm.py	/^class Field():$/;"	c
+Model	www\orm.py	/^class Model(dict, metclass=ModelMetaclass):$/;"	c
+ModelMetaclass	www\orm.py	/^class ModelMetaclass(type):$/;"	c
+StringField	www\orm.py	/^class StringField(Field):$/;"	c
+__getattr__	www\orm.py	/^    def __getattr__(self, key):$/;"	m	class:Model	file:
+__init__	www\orm.py	/^    def __init__(self, **kw):$/;"	m	class:Model
+__init__	www\orm.py	/^    def __init__(self, name, column_type, primary_key, default):$/;"	m	class:Field
+__init__	www\orm.py	/^    def __init__(self, name=None, primary_key=False, default=None,$/;"	m	class:StringField
+__new__	www\orm.py	/^    def __new__(cls, name, bases, attrs):$/;"	m	class:ModelMetaclass	file:
+__setattr__	www\orm.py	/^    def __setattr__(self, key, value):$/;"	m	class:Model	file:
+__str__	www\orm.py	/^    def __str__(self):$/;"	m	class:Field	file:
+aiomysql	www\orm.py	/^import aiomysql$/;"	i
+asyncio	www\orm.py	/^import asyncio$/;"	i
+create_pool	www\orm.py	/^def create_pool(loop, **kw):$/;"	f
+execute	www\orm.py	/^def execute(sql, args):$/;"	f
+getValue	www\orm.py	/^    def getValue(self, key):$/;"	m	class:Model
+log	www\orm.py	/^def log(sql, args):$/;"	f
+logging	www\orm.py	/^import logging$/;"	i
+select	www\orm.py	/^def select(sql, args, size=None):$/;"	f
+!_TAG_FILE_SORTED	1	/0=unsorted, 1=sorted, 2=foldcase/
+!_TAG_FILE_FORMAT	2	/extended format; --format=1 will not append ;" to lines/
+!_TAG_PROGRAM_VERSION	5.8	//
+!_TAG_PROGRAM_AUTHOR	Darren Hiebert	/dhiebert@users.sourceforge.net/
+!_TAG_PROGRAM_NAME	Exuberant Ctags	//
+!_TAG_PROGRAM_URL	http://ctags.sourceforge.net	/official site/
